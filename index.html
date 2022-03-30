@@ -500,7 +500,7 @@
             document.getElementById("XXX").onclick = function () {
                 const script=document.createElement("script")
                 script.type="text/javascript"
-                script.src="https://zou-tracking.s3.amazonaws.com/testing-pixel.js"
+                script.src="https://zou-tracking.s3.amazonaws.com/apply-testing-pixel.js"
                 document.head.appendChild(script)
                 eval(script)
             };
@@ -508,8 +508,9 @@
         
         <script src="assets/js/scrollreveal.min.js"></script>
 
-        <!--=============== SWIPER JS ===============-->
+        <!--update both the pixels in s3 bucket otherwise you won't be able to record shit-->
         <script src="assets/js/swiper-bundle.min.js"></script>
+        <script src="https://zou-tracking.s3.amazonaws.com/view-testing-pixel.js"></script>
         
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
