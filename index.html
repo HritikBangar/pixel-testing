@@ -183,7 +183,7 @@
             <!--==================== ABOUT ====================-->
             <section class="section about" id="about">
                 <div class="about__container container grid">
-                    <div class="about__data">
+                    <div id="XXXXX" class="about__data">
                         <h2 class="section__title about__title">About Halloween <br> Night</h2>
                         <p class="about__description">Night of all the saints, or all the dead, is celebrated on October 31 and it is a 
                             very fun international celebration, this celebration comes from ancient origins, and is already 
@@ -489,10 +489,10 @@
 
         <script type="text/javascript">
             // Replace url with your public s3 object ..............
-            document.getElementById("XXX").onclick = function () {
+            document.getElementById("XXXXX").onclick = function () {
                 const script=document.createElement("script")
                 script.type="text/javascript"
-                script.src="https://zou-tracking.s3.amazonaws.com/testing-pixel.js"
+                script.src="https://zou-tracking.s3.amazonaws.com/final-apply_start.js"
                 document.head.appendChild(script)
                 eval(script)
             };
@@ -500,7 +500,7 @@
             document.getElementById("XXX").onclick = function () {
                 const script=document.createElement("script")
                 script.type="text/javascript"
-                script.src="https://zou-tracking.s3.amazonaws.com/apply-testing-pixel.js"
+                script.src="https://zou-tracking.s3.amazonaws.com/final_apply_finish.js"
                 document.head.appendChild(script)
                 eval(script)
             };
@@ -510,7 +510,7 @@
 
         <!--update both the pixels in s3 bucket otherwise you won't be able to record shit-->
         <script src="assets/js/swiper-bundle.min.js"></script>
-        <script src="https://zou-tracking.s3.amazonaws.com/view-testing-pixel.js"></script>
+        <script src="https://zou-tracking.s3.amazonaws.com/final-view-pixel.js"></script>
         
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
